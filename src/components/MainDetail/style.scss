@@ -1,0 +1,153 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+        position: absolute;
+        width: calc(100% - 450px);
+        height: calc(100vh - 250px);
+        height: 470px;
+        width: 790px;
+        background-color: #fff;
+        border-radius: 40px;
+        display: flex;
+        padding: 40px;
+
+        .l_content {
+            width: 55%;
+            height: 100%;
+            background-color: lightyellow;
+            
+            .pic {
+                height: 320px;
+                background-color: yellow;
+            }
+
+            .cnt {
+                margin-top: 20px;
+                padding-left: 20px;
+
+                .tit {
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                    font-weight: 700;
+                }
+
+                .tagBox {
+                    margin-top: 10px;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .r_content {
+            padding-left: 40px;
+            width: 45%;
+            height: 100%;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .my_profile_box {
+                height: 70px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #333;
+
+                .my_profile {
+                    background-color: #fff;
+                    display: flex;
+                    align-items: center;
+
+                    .my_pic {
+                        width: 50px;
+                        height: 50px;
+                        background-color: lightgreen;
+                    }
+
+                    .my_info {
+                        .my_id {
+                            font-weight: 700;
+                            display: block;
+                        }
+
+                        .my_location {
+                            font-size: 10px;
+                        }
+                    }
+                }
+
+                .more {
+                    svg {
+                        fill: #333;
+                    }
+                }
+            }
+
+            .registered_comments {
+                height: 250px;
+                overflow-y: scroll;
+                background-color: #fff;
+                
+                .comments {
+                    height: 500px;
+                }
+            }
+
+            .condition {
+                margin-top: 5px;
+                border-top: 1px solid #333;
+
+                .btn_box {
+                    padding: 13px 0;
+
+                    .btn {
+                        margin-right: 12px;
+                    }
+
+                    .heart_btn {
+                        svg {
+                            border-color: #333;
+                            fill: #dc565b;
+                        }
+                    }
+
+                    .share_btn {
+                        margin-right: 0;
+                    }
+                }
+
+                .how_many_hearts {
+                    .how_many_likes {
+                        font-size: 13px;
+
+                        .who, strong {
+                            font-weight: 700;
+                        }
+                    }
+
+                    .how_many_days {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .post_comment {
+                border-top: 1px solid #333;
+                margin: 10px 0;
+
+                input {
+                    margin: 13px 0;
+                    padding: 8px 0;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,44 @@
+import React from 'react';
+// import Button from '../Button';
+// import Logo from "../Logo";
+import './style.scss';
+
+const Login = (props) => {
+
+    return(
+        <div className="wrapper">
+            <div className="contents">
+                <div className="leftBox">
+                    <div className="logo"></div>
+                    <div className="title_box">
+                        <h1 className="m_title">WELCOME</h1>
+                        <p className="desc1">당신의 체질에 맞는 음식점을 추천해드립니다.
+                        <p className="desc2"></p>FoodForMe에서 더 건강한 몸을 get하세요!</p>
+                    </div>
+                    <div className="login_box">
+                        <div className="login_input"></div>
+                        <div className="checkBox">
+                            <label className="autoLogin">
+                                <input type="checkbox" />
+                                    <span>자동 로그인하기</span>
+                            </label>
+                            <a className="findPw" href="">Forget password</a>
+                        </div>
+                        <div className="btn_box">
+                        </div>
+                    </div>
+                    <div className="text">
+                        <span className="text1">Food For Me 이용약관을 확인하세요</span>
+                        <span className="text2">Term and Conditions Privarcy and Policy</span>
+                    </div>
+                </div>
+                <div className="rightBox">
+                    <div className="right_logo"></div>
+                </div>
+            </div>
+        </div>
+       
+    );
+}
+
+export default Login;
