@@ -8,17 +8,32 @@ import {Route} from 'react-router-dom';
 class Container extends Component{
 
     state={
-        user_id: '',
-        user_password: '',
+        email_value : '',
+        password_value : '',
+        name_value : ''
     }
 
-    handleChangeValue = (e) => {
-        this.setState({
-            [e.target.name]: e.target.value,
-        })
+    handleChangeInput = (e) => {
+        // console.log(e.target);
+        // console.log(typeof(e.target.name)); //string
+        if(e.target.name === "user_email") {
+            this.setState({
+                email_value : e.target.value
+            })
+                
+        } else if (e.target.name==="user_password") {
+            this.setState = ({
+                password_value : e.target.value
+            })
+        } else if (e.target.name==="user_name"){
+            this.setState({
+                name_value : e.target.value
+            })
+        };
     }
     
     render(){
+        console.log();
         return(  
             <Route 
                 exact path="/login" 
@@ -31,6 +46,9 @@ class Container extends Component{
 }
 
 export default Container;
+
+//{...state}
+//{ ...state }
 
 // state 초기 선언 해주기
 // presenter.js에다 html 짜기

@@ -1,4 +1,4 @@
-.searchBar {
+.searchBar_wrap {
     position: relative;
     margin-top: 30px;
     border-bottom: 1px solid black;
@@ -7,22 +7,16 @@
     width: 100%;
     justify-content: space-between;
 
-    .searchButton{
-        
-    }
-
-    .searchInput{
+    .searchBar{
+        padding: 20px 0;
         flex-basis: 80%;
+        border: none;
     }
-}
 
-.searchBar::after {
-    display: block;
-    content: '';
-    position: absolute;
-    top: -30px;
-    right: 0px;
-    width: 45px;
-    height: 45px;
-    background-color: orange;
+    .searchButton{
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
 }

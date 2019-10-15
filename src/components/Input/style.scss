@@ -1,0 +1,23 @@
+.input_area {
+
+    input{
+        position: relative;
+        display: block;
+        // width: 450px;
+        // height: 71px;
+        width: 100%;
+        height: 38px;
+        background-color: #fff;
+        border: 1px solid #666;
+    }
+
+    input:first-child::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 7px;
+        height: 100%;
+        background-color: #f0d481;
+    }
+}

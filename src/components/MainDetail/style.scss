@@ -1,64 +1,64 @@
-.wrapper {
+.mainDetail_wrapper {
+    z-index: 100;
+    position: absolute;;
     width: 100vw;
     height: 100vh;
-    background-color: coral;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .content {
         position: absolute;
-        width: calc(100% - 450px);
-        height: calc(100vh - 250px);
-        height: 470px;
-        width: 790px;
+        width: calc(100% - 370px);
+        height: calc(100vh - 170px);
+        max-width: 1090px;
+        max-height: 632px;
         background-color: #fff;
         border-radius: 40px;
         display: flex;
-        padding: 40px;
+        padding: 50px;
 
         .l_content {
-            width: 55%;
+            width: 50%;
             height: 100%;
-            background-color: lightyellow;
             
             .pic {
-                height: 320px;
-                background-color: yellow;
+                height: calc(100% - 162px);
+                max-height: 462px;
+                background-color: #fcf7ed;
+                border-radius: 20px;
             }
 
             .cnt {
-                margin-top: 20px;
-                padding-left: 20px;
+                margin-top: 40px;
 
                 .tit {
-                    font-size: 20px;
+                    font-size: 21px;
                     letter-spacing: 1px;
                     font-weight: 700;
                 }
 
                 .tagBox {
-                    margin-top: 10px;
-                    font-size: 12px;
+                    margin-top: 23px;
                 }
             }
         }
 
         .r_content {
-            padding-left: 40px;
-            width: 45%;
+            border-left: 1px solid #f6f6f6;
+            margin-left: 34px;
+            width: 50%;
             height: 100%;
-            background-color: lightblue;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
 
             .my_profile_box {
-                height: 70px;
+                padding: 30px 24px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                border-bottom: 1px solid #333;
+                border-bottom: 2px solid #efefef;
 
                 .my_profile {
                     background-color: #fff;
@@ -66,19 +66,25 @@
                     align-items: center;
 
                     .my_pic {
-                        width: 50px;
-                        height: 50px;
-                        background-color: lightgreen;
+                        margin-right: 26px;
+                        
+                        img {
+                            display: block;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;;
+                            background-color: lightgreen;
+                        }
                     }
 
                     .my_info {
                         .my_id {
-                            font-weight: 700;
                             display: block;
+                            margin-bottom: 9px;
                         }
 
                         .my_location {
-                            font-size: 10px;
+                            font-size: 13px;
                         }
                     }
                 }
@@ -91,29 +97,88 @@
             }
 
             .registered_comments {
+                margin-bottom: 5px;
+                padding: 35px 24px;
                 height: 250px;
                 overflow-y: scroll;
                 background-color: #fff;
                 
                 .comments {
-                    height: 500px;
+                    height: 520px;
+
+                    .comment.my_comment {
+                        justify-content: inherit;
+                        margin-bottom: 14px;
+                    }
+                    
+                    .comment {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 40px;
+
+                        .pic {
+                            margin-right: 26px;
+                        
+                            img {
+                                display: block;
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50%;;
+                                background-color: lightgreen;
+                            }
+                        }
+
+                        .info {
+                            flex-basis: 70%;
+
+                            .cnt_box {
+                                line-height: 20px;
+
+                                .cnt.tag {
+                                    color: #02295c;
+                                }
+                            }
+
+                            .sub_box {
+                                margin-top: 26px;
+                                color: #ccc;
+
+                                .day {
+                                    margin-right: 26px;
+                                }
+
+                                .reply {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+
+                        .heart {
+                            flex-basis: 12%; 
+                            text-align: center;
+                            padding-top: 10px;
+                            color: #c7c7c7;
+                        }
+                    }
+
+                
                 }
             }
 
             .condition {
-                margin-top: 5px;
-                border-top: 1px solid #333;
+                border-top: 2px solid #efefef;
+                padding-top: 20px;
+                padding-left: 24px;
+                padding-right: 24px;
 
                 .btn_box {
-                    padding: 13px 0;
 
                     .btn {
-                        margin-right: 12px;
+                        margin-right: 26px;
                     }
 
                     .heart_btn {
                         svg {
-                            border-color: #333;
                             fill: #dc565b;
                         }
                     }
@@ -125,7 +190,7 @@
 
                 .how_many_hearts {
                     .how_many_likes {
-                        font-size: 13px;
+                        margin: 16px 0;
 
                         .who, strong {
                             font-weight: 700;
@@ -133,18 +198,34 @@
                     }
 
                     .how_many_days {
-                        font-size: 10px;
+                        color: #999999;
+                        font-size: 12px;
+                        margin-bottom: 20px;
                     }
                 }
             }
 
             .post_comment {
-                border-top: 1px solid #333;
+                padding-left: 24px;
+                padding-right: 24px;
+                border-top: 2px solid #efefef;
                 margin: 10px 0;
+                display: flex;
+                justify-content: space-between;
 
                 input {
                     margin: 13px 0;
-                    padding: 8px 0;
+                    padding: 10px 0;
+                    flex-basis: 90%;
+                    font-weight: 700;
+                    color: #999999;
+                    border: none;
+                }
+
+                .btn {
+                    color: #cadff9;
+                    background-color: transparent;
+                    border: none;
                 }
             }
         }

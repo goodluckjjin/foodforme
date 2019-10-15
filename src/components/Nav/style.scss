@@ -1,0 +1,16 @@
+.nav {
+    height: 100%;
+
+    a {
+        height: 100%;
+        padding: 16px;
+        line-height: 70px;
+        margin-right: 22px;
+        color: #333;
+        text-decoration: none;
+    }
+
+    a:last-child {
+        margin-right: 0;
+    }
+}

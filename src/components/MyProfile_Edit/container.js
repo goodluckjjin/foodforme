@@ -1,12 +1,16 @@
-import { React } from 'react';
+import React, {Component} from 'react';
 import MyProfile_Edit from "./presenter.js";
+import {Route} from "react-router-dom";
 
 
-class Container extends Component(){
+class Container extends Component{
     
     render(){
         return(    
-            <MyProfile_Edit />
+            <Route 
+                path="/mypage/myprofile_edit"
+                render={()=><MyProfile_Edit />}
+            />
         );
     }
 }

@@ -1,8 +1,8 @@
-import { React } from 'react';
+import React, {Component} from 'react';
 import Feed from "./presenter.js";
 
 
-class Container extends Component(){
+class Container extends Component{
     
     render(){
         return(    

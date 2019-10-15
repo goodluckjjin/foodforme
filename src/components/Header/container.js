@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 
 
 //1. router (page)별로 보이고, 안보이고를 하게할거야 
-//2. pathname 
+//2. pathname
 //react-router-dom 안에 있는 props 
 //props.location.pathname
 //Route (x)

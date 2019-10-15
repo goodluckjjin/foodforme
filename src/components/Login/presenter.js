@@ -1,7 +1,9 @@
 import React from 'react';
-// import Button from '../Button';
-// import Logo from "../Logo";
+import Button from '../Button';
+import Logo from "../Logo";
 import './style.scss';
+import Input from '../Input';
+import { NavLink } from 'react-router-dom';
 
 const Login = (props) => {
 
@@ -9,22 +11,26 @@ const Login = (props) => {
         <div className="wrapper">
             <div className="contents">
                 <div className="leftBox">
-                    <div className="logo"></div>
+                    <Logo />
                     <div className="title_box">
                         <h1 className="m_title">WELCOME</h1>
-                        <p className="desc1">당신의 체질에 맞는 음식점을 추천해드립니다.
-                        <p className="desc2"></p>FoodForMe에서 더 건강한 몸을 get하세요!</p>
+                        <p className="desc1">당신의 체질에 맞는 음식점을 추천해드립니다.</p>
+                        <p className="desc2">FoodForMe에서 더 건강한 몸을 get하세요!</p>
                     </div>
                     <div className="login_box">
-                        <div className="login_input"></div>
+                        <Input type="email" name="user_email" placeholder="email를 입력해주세요" />
+                        <Input type="password" name="user_password" placeholder="password를 입력해주세요"/>
                         <div className="checkBox">
                             <label className="autoLogin">
                                 <input type="checkbox" />
-                                    <span>자동 로그인하기</span>
+                                <span>자동 로그인하기</span>
                             </label>
                             <a className="findPw" href="">Forget password</a>
                         </div>
                         <div className="btn_box">
+                            <Button type="submit" name="login" {...props}/>
+                            <NavLink className="link" to="/join">Join</NavLink>
+                            <Button type="button" name="join" {...props}/>
                         </div>
                     </div>
                     <div className="text">

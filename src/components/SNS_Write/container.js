@@ -1,12 +1,16 @@
-import { React } from 'react';
+import React, {Component} from 'react';
 import SNS_Write from "./presenter.js";
+import {Route} from "react-router-dom";
 
 
-class Container extends Component(){
+class Container extends Component{
     
     render(){
         return(    
-            <SNS_Write />
+            <Route
+                path="/mypage/sns_write"
+                render={() => <SNS_Write />}
+            />
         );
     }
 }

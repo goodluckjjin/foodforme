@@ -1,11 +1,14 @@
 import React from 'react';
 import "./style.scss";
 import Login from '../Login';
-// import Join from '../Join';
+import Join from '../Join';
 import Main from '../Main';
-// import Modal from '../Modal';
 import MainDetail from '../MainDetail';
 import MyPage from '../MyPage';
+import Search from '../Search';
+import SNS_Write from '../SNS_Write';
+import SNS_Edit from '../SNS_Edit';
+import MyProfile_Edit from '../MyProfile_Edit';
 import { BrowserRouter as Router} from 'react-router-dom';
 //4. presenter에서 UI를 그린다.
 //Fragment: 하나의 태그로 묶여야 하는데, div가 굳이 필요가 없어. 그럴 때 사용.
@@ -18,8 +21,13 @@ const App = () => {
         <Router>
             <MainDetail/>
             <Login/>
+            <Join/>
             <MyPage/>
             <Main/>
+            <Search/>
+            <SNS_Write/>
+            <SNS_Edit/>
+            <MyProfile_Edit/>
         </Router>
     );
 }

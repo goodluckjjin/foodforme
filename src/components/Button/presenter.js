@@ -1,8 +1,16 @@
 import React from "react";
+import './style.scss'
 
-const Button = () => {
+const Button = (props) => {
     return (
-        <button>버튼</button>
+        <div className="button_wrap">
+            <button
+                type={props.type}
+                name={props.name}
+                value={props.value}
+                onClick={props.onClickButton}
+            >버튼</button>
+        </div>
     )
 }
 

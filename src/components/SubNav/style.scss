@@ -1,0 +1,24 @@
+.sub_nav {
+    display: flex;
+    justify-content: center;
+
+    .menu_list {
+        display: flex;
+    
+        .menu {
+            margin-right: 20px;
+            
+            a {
+                display: block;
+                padding: 19px;
+                color: #333;
+                font-size: 15px;
+                text-decoration: none;
+            }
+
+        }
+        .menu:last-child {
+            margin-right: 0;
+        }
+    }
+}

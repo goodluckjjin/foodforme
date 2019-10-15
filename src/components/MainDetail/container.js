@@ -9,11 +9,23 @@ import { Route } from 'react-router-dom';
 
 // 부모(X) => 자식  exact
 // / => /detail 
+
+
 class Container extends Component{
-    
+    // state={
+    //     closeBtn: false; modal에 있는 btn태그를 어떻게 가져오지?
+    // }
+
+    // handleModal = () => {
+    //     const 
+    // }
+
     render(){
         return(    
-            <Route path="/main/detail" render={() => <MainDetail/>}/>
+            <Route
+                path="/main/detail"
+                render={() => <MainDetail/>}
+            />
         );
     }
 }

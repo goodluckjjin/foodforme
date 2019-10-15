@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import Logo from "./presenter.js";
+import SubNav from "./presenter.js";
 
 
 class Container extends Component{
     
     render(){
         return(    
-            <Logo/>
+            <SubNav />
         );
     }
 }

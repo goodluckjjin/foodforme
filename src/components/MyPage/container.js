@@ -8,7 +8,7 @@ class Container extends Component{
     render(){
         return(    
             <Route 
-                exact path="/mypage"
+                path="/mypage"
                 render={() => <MyPage />}
             />
         );

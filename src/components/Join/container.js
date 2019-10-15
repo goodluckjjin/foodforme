@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
 import Join from "./presenter.js";
+import {Route} from 'react-router-dom';
 
 
 class Container extends Component{
@@ -13,7 +14,9 @@ class Container extends Component{
 
     render(){
         return(    
-            <Join />
+            <Route
+                exact path="/join"
+                render={() => <Join/>} />
         );
     }
 }

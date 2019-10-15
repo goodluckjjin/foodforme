@@ -1,12 +1,15 @@
-import { React } from 'react';
+import React, {Component} from 'react';
 import Search from "./presenter.js";
+import {Route} from "react-router-dom";
 
 
-class Container extends Component(){
+class Container extends Component{
     
     render(){
         return(    
-            <Search/>
+            <Route
+            exact path="/search"
+            render={() => <Search/>}/>
         );
     }
 }
