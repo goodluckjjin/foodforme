@@ -38,6 +38,13 @@
                         margin-right: 0;
                     }
                 }
+
+                .sort {
+                    margin-right: 38px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
             }
     
             .content.fourGrid {

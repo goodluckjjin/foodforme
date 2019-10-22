@@ -90,8 +90,8 @@ const MainDetail = (props) => {
                         </div>
                     </div>
                     <div className="post_comment">
-                        <input type="text" placeholder="댓글 달기..."/>
-                        <button class="btn" type="button">게시</button>
+                        <input onChange={props.onChangeInput}  type="text" name="reply" placeholder="댓글 달기..."/>
+                        <button name="replye_btn" type="button">게시</button>
                     </div>
                 </div>
             </div>

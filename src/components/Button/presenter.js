@@ -1,5 +1,5 @@
 import React from "react";
-import './style.scss'
+// import '../App/style.scss';
 
 const Button = (props) => {
     return (
@@ -7,9 +7,8 @@ const Button = (props) => {
             <button
                 type={props.type}
                 name={props.name}
-                value={props.value}
                 onClick={props.onClickButton}
-            >버튼</button>
+            >{props.buttonText}</button>
         </div>
     )
 }

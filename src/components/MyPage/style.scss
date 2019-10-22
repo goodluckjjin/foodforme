@@ -39,11 +39,14 @@
                             margin-right: 26px; 
                         }
 
-                        .edit_btn, .setting_icon {
+                        .edit_link_btn, .setting_icon {
                             cursor: pointer;
                         }
 
-                        .edit_btn {
+                        .edit_link_btn {
+                            font-size: 14px;
+                            color: #333;
+                            text-decoration: none;
                             margin-right: 15px;
                             padding: 10px 12px;
                             background-color: white;
@@ -78,6 +81,17 @@
                     align-items: center;
                     margin-top: 35px;
                     margin-right: 17px;
+
+                    .write_link_btn {
+                        display: block;
+                        padding: 15px 50px;
+                        font-size: 14px;
+                        color: white;
+                        background-color: #494593;
+                        border: none;
+                        cursor: pointer;
+                        text-decoration: none;
+                    }
                 }
             }
 

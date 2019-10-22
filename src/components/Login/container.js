@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Login from "./presenter.js";
-// import Logo from "../Feed/container.js";
-// import Logo from "../Feed";
+// import Logo from "../Logo";
 import {Route} from 'react-router-dom';
 
 
@@ -10,7 +9,10 @@ class Container extends Component{
     state={
         email_value : '',
         password_value : '',
-        name_value : ''
+    }
+
+    handleLoginClick = () => {
+        console.log('Login');
     }
 
     handleChangeInput = (e) => {
@@ -25,21 +27,17 @@ class Container extends Component{
             this.setState = ({
                 password_value : e.target.value
             })
-        } else if (e.target.name==="user_name"){
-            this.setState({
-                name_value : e.target.value
-            })
         };
     }
     
     render(){
-        console.log();
         return(  
             <Route 
                 exact path="/login" 
                 render={()=> <Login 
                     {...this.state}
-                    onChangeValue={this.handleChangeValue}
+                    onChangeInput={this.handleChangeInput}
+                    onClickButton={this.handleLoginClick}
                     />} />
         );
     }

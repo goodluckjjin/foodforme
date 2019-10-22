@@ -18,8 +18,8 @@ const Login = (props) => {
                         <p className="desc2">FoodForMe에서 더 건강한 몸을 get하세요!</p>
                     </div>
                     <div className="login_box">
-                        <Input type="email" name="user_email" placeholder="email를 입력해주세요" />
-                        <Input type="password" name="user_password" placeholder="password를 입력해주세요"/>
+                        <Input type="email" name="user_email" placeholder="email를 입력해주세요" {...props}/>
+                        <Input type="password" name="user_password" placeholder="password를 입력해주세요" {...props}/>
                         <div className="checkBox">
                             <label className="autoLogin">
                                 <input type="checkbox" />
@@ -28,9 +28,10 @@ const Login = (props) => {
                             <a className="findPw" href="">Forget password</a>
                         </div>
                         <div className="btn_box">
-                            <Button type="submit" name="login" {...props}/>
-                            <NavLink className="link" to="/join">Join</NavLink>
-                            <Button type="button" name="join" {...props}/>
+                            {/* <Button type="submit" name="login" {...props}>Login</Button> */}
+                            <Button type="submit" name="login" {...props} onClickButton={props.onClickButton}/>
+                            <NavLink className="link_button" to="/join" name="join">Join</NavLink>
+                            {/* <Button type="button" name="join" {...props}/> */}
                         </div>
                     </div>
                     <div className="text">

@@ -20,12 +20,34 @@ class Container extends Component{
     //     const 
     // }
 
+    state = {
+        reply_input: '',
+    }
+
+    handleChangeInput = (e) => {
+        if(e.target.name === "reply") {
+            this.setState({
+                reply_input: e.target.value
+            })
+        }
+        console.log(e.target.value);
+        console.log(this.reply_input); //이게 undefined인 이유는 console.log가 setState보다 먼저 실행되기 때문에?
+    }
+
+
+
+
     render(){
+        // const { name, type, value } = {this.state}
+
         return(    
             <Route
                 path="/main/detail"
-                render={() => <MainDetail/>}
-            />
+                render={() => <MainDetail
+                    type={this.type}
+                    name={this.name}
+                    onChangeInput= {this.handleChangeInput}
+                />}/>
         );
     }
 }

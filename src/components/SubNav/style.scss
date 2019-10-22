@@ -8,7 +8,7 @@
         .menu {
             margin-right: 20px;
             
-            a {
+            .link {
                 display: block;
                 padding: 19px;
                 color: #333;
@@ -16,6 +16,11 @@
                 text-decoration: none;
             }
 
+            .link.active {
+                color: black;
+                font-weight: 700;
+                font-size: initial;
+            }
         }
         .menu:last-child {
             margin-right: 0;

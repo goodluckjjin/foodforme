@@ -2,14 +2,15 @@ import React from 'react';
 import './style.scss';
 import Logo from '../Logo';
 import Nav from '../Nav';
-import SubNav from '../Nav copy';
+import SubNav from '../SubNav';
+import { NavLink } from 'react-router-dom';
 
 const Header = (props) => {
     return( 
         <header className="header">
             <div className="top_header">
                 <div className="container">
-                    < Logo/>
+                    <NavLink className="link" to="/main"><Logo /></NavLink>
                     < Nav/>
                 </div>
             </div>

@@ -36,7 +36,7 @@ class Container extends Component{
             <Input 
                 type={this.props.type}
                 name={this.props.name}
-                onChangeInput ={this.props.onChangeInput}
+                onChange ={this.props.onChangeInput}
                 placeholder = {this.props.placeholder}
             />
         );

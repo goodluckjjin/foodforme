@@ -1,7 +1,7 @@
 .nav {
     height: 100%;
 
-    a {
+    .link {
         height: 100%;
         padding: 16px;
         line-height: 70px;
@@ -10,7 +10,7 @@
         text-decoration: none;
     }
 
-    a:last-child {
+    .link:last-child {
         margin-right: 0;
     }
 }

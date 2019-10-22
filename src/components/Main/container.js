@@ -2,16 +2,32 @@ import React, {Component} from 'react';
 import Main from "./presenter.js";
 import {Route} from 'react-router-dom';
 
+// 1. 버튼클릭별로 보이고, 안보이고
+// 2. e.tar
 class Container extends Component{
     
-    state = {
-        search_box: '',
-        search_button: '',
-    }
+    // state = {
+    //     sort1: false,
+    //     sort2: false,
+    //     sort3: false,
+    //     sort4: false,
+    // }
+
+    // handleSort = (e) => {
+    // }
+
+    // componentDidMount(){
+    //     this.handleSort();
+    // }
 
     render(){
+        // console.log(this.sort1);
         return(    
-            <Route path="/main" render={() => <Main/>}/>
+            <Route
+            path="/main"
+            render={() => <Main
+                {...this.state}
+            />} />
         );
     }
 }

@@ -43,3 +43,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.button_wrap button,
+.link_button {
+	display: block;
+    padding: 15px 50px;
+    font-size: 14px;
+    color: white;
+    background-color: #494593;
+    border: none;
+	cursor: pointer;
+	text-decoration: none;
+}
