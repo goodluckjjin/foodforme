@@ -6,7 +6,7 @@ import Nav from '../Nav';
 import SubNav from '../SubNav';
 import { NavLink } from 'react-router-dom';
 
-class container extends Component {
+class Header extends Component {
     state = {
         isBottomHeader: true
     }
@@ -51,4 +51,4 @@ class container extends Component {
     }
 }
 
-export default withRouter(container);
+export default withRouter(Header);

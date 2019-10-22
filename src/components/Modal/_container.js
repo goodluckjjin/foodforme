@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import Modal from "./presenter.js";
+import Modal from "./presenter.js.js";
 
 
 class Container extends Component{

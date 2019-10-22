@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import MyPage from "./presenter.js";
+import MyPage from "./_presenter.js/index.js";
 import {Route} from "react-router-dom";
 
 

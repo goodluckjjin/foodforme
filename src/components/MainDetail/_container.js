@@ -1,5 +1,5 @@
 import  React, {Component} from 'react';
-import MainDetail from "./presenter.js";
+import MainDetail from "./_presenter.js/index.js.js.js";
 //6. Route를 단다.
 import { Route } from 'react-router-dom';
 //7. Route의 역할: 페이지를 만든다. 

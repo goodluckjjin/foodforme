@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './style.scss';
 
-class Container extends Component {
+class Input extends Component {
 
     render() {
         return (
@@ -20,4 +20,4 @@ class Container extends Component {
     }
 }
 
-export default Container;
+export default Input;

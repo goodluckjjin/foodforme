@@ -3,7 +3,7 @@ import './style.scss';
 import { NavLink } from 'react-router-dom';
 
 
-class Container extends Component {
+class Logo extends Component {
 
     render() {
         return (
@@ -12,4 +12,4 @@ class Container extends Component {
     }
 }
 
-export default Container;
+export default Logo;

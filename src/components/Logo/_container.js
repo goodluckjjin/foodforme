@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Logo from "./presenter.js";
+import Logo from "./_presenter.js/index.js";
 
 
 class Container extends Component{

@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import Button from "./presenter.js";
+import Button from "./presenter.js.js.js";
 
 // 아까 데이터를 불러오면 map를 사용했던 것이고 input이 데이터를 보내니까? 뭐라고햇징?
 class Container extends Component{

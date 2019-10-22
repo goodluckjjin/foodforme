@@ -1,5 +1,5 @@
 import React, {Component } from 'react';
-import App from "./presenter.js";
+import App from "./presenter.js.js.js";
 
 
 class Container extends Component{
