@@ -6,23 +6,23 @@ import SubNav from '../SubNav';
 import { NavLink } from 'react-router-dom';
 
 const Header = (props) => {
-    return( 
+    return (
         <header className="header">
             <div className="top_header">
                 <div className="container">
                     <NavLink className="link" to="/main"><Logo /></NavLink>
-                    < Nav/>
+                    < Nav />
                 </div>
             </div>
 
             {props.isBottomHeader && (
                 <div className="bottom_header">
-                <div className="container">
-                    <SubNav />
+                    <div className="container">
+                        <SubNav />
+                    </div>
                 </div>
-            </div>
-            )} 
-    </header>
+            )}
+        </header>
     );
 }
 
@@ -30,7 +30,7 @@ export default Header;
 
 /*
 <header className="header">
-    
+
 <div className="container">
     <h1 className="logo"></h1>
     <nav className="nav">

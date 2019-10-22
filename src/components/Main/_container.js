@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
-import Main from "./presenter.js";
-import {Route} from 'react-router-dom';
+import React, { Component } from 'react';
+import Main from "./_presenter.js/index.js";
+import { Route } from 'react-router-dom';
 
 // 1. 버튼클릭별로 보이고, 안보이고
 // 2. e.tar
-class Container extends Component{
-    
+class Container extends Component {
+
     // state = {
     //     sort1: false,
     //     sort2: false,
@@ -20,14 +20,14 @@ class Container extends Component{
     //     this.handleSort();
     // }
 
-    render(){
+    render() {
         // console.log(this.sort1);
-        return(    
+        return (
             <Route
-            path="/main"
-            render={() => <Main
-                {...this.state}
-            />} />
+                path="/main"
+                render={() => <Main
+                    {...this.state}
+                />} />
         );
     }
 }
